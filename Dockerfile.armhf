@@ -18,9 +18,9 @@ RUN set -x && apt-get update \
 ENV NODE_VERSION 10.19.0
 
 RUN set -x \
-  && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-arm7l.tar.gz" \
-  && tar -xzf "node-v$NODE_VERSION-linux-arm7l.tar.gz" -C /usr/local --strip-components=1 --no-same-owner \
-  && rm "node-v$NODE_VERSION-linux-arm7l.tar.gz" \
+  && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-armv7l.tar.gz" \
+  && tar -xzf "node-v$NODE_VERSION-linux-armv7l.tar.gz" -C /usr/local --strip-components=1 --no-same-owner \
+  && rm "node-v$NODE_VERSION-linux-armv7l.tar.gz" \
   && ln -s /usr/local/bin/node /usr/local/bin/nodejs \
   && npm set prefix /usr/local \
   && npm config set unsafe-perm true
