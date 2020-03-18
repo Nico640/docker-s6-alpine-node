@@ -1,4 +1,4 @@
-FROM library/debian:9.6-slim
+FROM library/debian:9.12-slim
 
 RUN set -x && apt-get update \
   && apt-get install -y curl tzdata locales psmisc procps iputils-ping logrotate \
