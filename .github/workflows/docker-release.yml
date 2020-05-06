@@ -23,4 +23,4 @@ jobs:
           qemu-version: latest
       - 
         name: Build and push Docker image
-        run: docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t nico640/s6-debian-node:ci-test-build -f Dockerfile --push .
+        run: docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t nico640/s6-debian-node:latest -f Dockerfile --push .
