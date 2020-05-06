@@ -1,4 +1,4 @@
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Nico640/docker-s6-debian-node/Docker CI Release.svg?style=for-the-badge)](https://github.com/Nico640/docker-s6-debian-node/actions?query=workflow%3A%22Docker+CI+Release%22) 
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Nico640/docker-s6-debian-node/Docker%20CI%20Release?style=for-the-badge)](https://github.com/Nico640/docker-s6-debian-node/actions?query=workflow%3A%22Docker+CI+Release%22) 
 
 # s6-node
 This is a fork of [oznu/docker-s6-alpine-node](https://github.com/oznu/docker-s6-alpine-node) meant for maintaining [nico640/docker-unms](https://github.com/Nico640/docker-unms).
