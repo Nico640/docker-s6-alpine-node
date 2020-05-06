@@ -1,4 +1,4 @@
-[![Docker Build Status](https://img.shields.io/docker/cloud/build/nico640/s6-debian-node.svg?label=x64%20build&style=for-the-badge)](https://hub.docker.com/r/nico640/s6-debian-node/) [![GitLab](https://img.shields.io/gitlab/pipeline/Nico640/docker-s6-debian-node.svg?label=arm%20build&style=for-the-badge)](https://gitlab.com/Nico640/docker-s6-debian-node/-/jobs)
+[![Build Status](https://img.shields.io/github/workflow/status/Nico640/docker-s6-debian-node/Docker CI Release?style=for-the-badge)](https://github.com/Nico640/docker-s6-debian-node/actions?query=workflow%3A%22Docker+CI+Release%22) 
 
 # s6-node
 This is a fork of [oznu/docker-s6-alpine-node](https://github.com/oznu/docker-s6-alpine-node) meant for maintaining [nico640/docker-unms](https://github.com/Nico640/docker-unms).
