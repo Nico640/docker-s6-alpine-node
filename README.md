@@ -1,4 +1,5 @@
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Nico640/docker-s6-debian-node/Docker%20CI%20Release?style=for-the-badge)](https://github.com/Nico640/docker-s6-debian-node/actions?query=workflow%3A%22Docker+CI+Release%22) 
+[![GitHub Release](https://img.shields.io/github/v/release/Nico640/docker-s6-debian-node?style=flat-square)](https://github.com/nico640/docker-unms/releases) 
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/Nico640/docker-s6-debian-node/Docker%20CI%20Release?style=flat-square)](https://github.com/Nico640/docker-s6-debian-node/actions?query=workflow%3A%22Docker+CI+Release%22)
 
 # s6-node
 This is a fork of [oznu/docker-s6-alpine-node](https://github.com/oznu/docker-s6-alpine-node) meant for maintaining [nico640/docker-unms](https://github.com/Nico640/docker-unms).
@@ -11,14 +12,6 @@ Debian Linux + [S6 Overlay](https://github.com/just-containers/s6-overlay) + [No
 
 See the [S6 Overlay Documentation](https://github.com/just-containers/s6-overlay) for details on how to manage services.
 
-x86_64:
-
 ```shell
 docker run nico640/s6-debian-node:latest
-```
-
-ARM:
-
-```shell
-docker run nico640/s6-debian-node:armhf
 ```
