@@ -1,4 +1,4 @@
-FROM debian:9.12-slim AS base
+FROM debian:9.13-slim AS base
 ARG TARGETARCH
 ARG TARGETVARIANT
 
