@@ -6,7 +6,7 @@ This is a fork of [oznu/docker-s6-alpine-node](https://github.com/oznu/docker-s6
 
 This is a base Node.js image with the S6 Overlay and support for x86_64 and ARM (Raspberry Pi 1, 2, 3, 4).
 
-Debian Linux + [S6 Overlay](https://github.com/just-containers/s6-overlay) + [Node](https://nodejs.org/en/)
+Alpine Linux + [S6 Overlay](https://github.com/just-containers/s6-overlay) + [Node](https://nodejs.org/en/)
 
 ## Usage
 
