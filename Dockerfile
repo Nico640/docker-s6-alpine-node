@@ -1,4 +1,4 @@
-FROM node:16.1.0-alpine3.12 AS base
+FROM node:16.13.1-alpine3.13 AS base
 ARG TARGETARCH
 ARG TARGETVARIANT
 
