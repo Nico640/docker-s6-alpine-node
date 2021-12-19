@@ -18,10 +18,7 @@ FROM base-${TARGETARCH}${TARGETVARIANT}
 
 RUN set -x && apk add --no-cache curl tzdata logrotate shadow coreutils libstdc++ \
     && curl -SL "https://github.com/just-containers/s6-overlay/releases/download/v2.2.0.3/s6-overlay-${S6_OVERLAY_ARCH}.tar.gz" | tar xvz -C / \
-    && groupmod -g 911 users \
-    && useradd -u 911 -U -d /config -s /bin/false abc \
-    && usermod -G users abc \
-    && mkdir -p /app /config /defaults \
+    && mkdir -p /config \
     && sed -i "s#/var/log/messages {}.*# #g" /etc/logrotate.conf \
     && rm -rf /var/cache/apk/*
 
