@@ -17,7 +17,7 @@ ENV APK_ARCH=armhf
 FROM base-${TARGETARCH}${TARGETVARIANT}
 
 RUN set -x && apk add --no-cache curl tzdata logrotate shadow coreutils libstdc++ \
-    && curl -SL "https://github.com/just-containers/s6-overlay/releases/download/v3.1.1.2/s6-overlay-${S6_OVERLAY_ARCH}.tar.xz" | tar xv -C / \
+    && curl -SL "https://github.com/just-containers/s6-overlay/releases/download/v3.1.1.2/s6-overlay-${S6_OVERLAY_ARCH}.tar.xz" | tar xvJ -C / \
     && mkdir -p /config \
     && sed -i "s#/var/log/messages {}.*# #g" /etc/logrotate.conf \
     && rm -rf /var/cache/apk/*
