@@ -1,4 +1,4 @@
-FROM node:20.18.3-alpine3.21 AS base
+FROM node:22.22.0-alpine3.23 AS base
 ARG TARGETARCH
 ARG TARGETVARIANT
 
@@ -17,8 +17,8 @@ ENV APK_ARCH=armhf
 FROM base-${TARGETARCH}${TARGETVARIANT}
 
 RUN set -x && apk add --no-cache curl tzdata logrotate shadow coreutils libstdc++ \
-    && curl -SL "https://github.com/just-containers/s6-overlay/releases/download/v3.2.1.0/s6-overlay-noarch.tar.xz" | tar xvJ -C / \
-    && curl -SL "https://github.com/just-containers/s6-overlay/releases/download/v3.2.1.0/s6-overlay-${S6_OVERLAY_ARCH}.tar.xz" | tar xvJ -C / \
+    && curl -SL "https://github.com/just-containers/s6-overlay/releases/download/v3.2.3.2/s6-overlay-noarch.tar.xz" | tar xvJ -C / \
+    && curl -SL "https://github.com/just-containers/s6-overlay/releases/download/v3.2.3.2/s6-overlay-${S6_OVERLAY_ARCH}.tar.xz" | tar xvJ -C / \
     && mkdir -p /config \
     && sed -i "s#/var/log/messages {}.*# #g" /etc/logrotate.conf \
     && rm -rf /var/cache/apk/*
